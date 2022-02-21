@@ -109,6 +109,13 @@ nav ul {
   gap: 3rem;
 }
 
+.error {
+  border: solid 1px red;
+  color: red;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 /* LOADER */
 
 .loader {

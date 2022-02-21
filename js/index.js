@@ -8,6 +8,7 @@ const options = {
 };
 
 const jokeContainer = document.querySelector(".jokes");
+const errorContainer = document.querySelector(".error-container");
 
 async function getDadJokes() {
   try {
@@ -40,7 +41,7 @@ async function getDadJokes() {
     }
   } catch (error) {
     console.log(error);
-    jokeContainer.innerHTML = error;
+    errorContainer.innerHTML = errorMessage("An error occurred when calling the API, error: " + error);
   }
 }
 

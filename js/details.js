@@ -29,7 +29,7 @@ async function fetchJoke() {
         </div>`;
   } catch (error) {
     console.log(error);
-    detailContainer.innerHTML = error;
+    errorContainer.innerHTML = errorMessage("An error occurred when calling the APIm, error: " + error);
   }
 }
 
