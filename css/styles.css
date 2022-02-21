@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* VARIABLES */
+
+:root {
+  --dark-grey: #4f4f4f;
+}
+
+/* MAIN ELEMENTS */
+
+body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+header {
+  margin: 0;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  color: black;
+  width: 100%;
+  height: fit-content;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  color: black;
+  background-color: var(--dark-grey);
+}
