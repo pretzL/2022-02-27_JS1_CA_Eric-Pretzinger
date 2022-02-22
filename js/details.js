@@ -30,11 +30,22 @@ async function fetchJoke() {
     const singleResult = await response.json();
     console.log(singleResult);
 
+    let punchline = "Badum.. Tsss...";
+    let explanation = "This joke needs no explanation!";
+
+    if (singleResult.why) {
+      explanation = singleResult.why;
+    }
+
+    if (singleResult.punchline) {
+      punchline = singleResult.punchline;
+    }
+
     detailContainer.innerHTML = `<div class="single-card card">
         <h2>${singleResult.headline}</h2>
-        <p>${singleResult.punchline}</p>
+        <p>${punchline}</p>
         <button type="button" class="btn">Explanation</button>
-        <p class="explanation-text">${singleResult.why}</p>
+        <p class="explanation-text">${explanation}</p>
         <p class="type-joke">Type of joke: ${singleResult.type}</p>
         </div>`;
 

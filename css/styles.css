@@ -76,6 +76,8 @@ h2 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: black;
   border: 1px solid black;
@@ -87,6 +89,7 @@ h2 {
 .single-card {
   max-width: 600px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .explanation-text {
@@ -124,6 +127,13 @@ nav ul {
 
 .details {
   margin-bottom: 2rem;
+}
+
+.btn {
+  width: 20%;
+  height: 3vh;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 /* LOADER */
