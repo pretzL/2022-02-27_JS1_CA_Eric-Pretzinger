@@ -27,6 +27,7 @@ async function fetchJoke() {
         <p>${singleResult.punchline}</p>
         <button type="button" class="btn">Explanation</button>
         <p class="explanation-text">${singleResult.why}</p>
+        <p class="type-joke">Type of joke: ${singleResult.type}</p>
         </div>`;
 
     //Explanation hidden function
@@ -40,7 +41,7 @@ async function fetchJoke() {
     };
   } catch (error) {
     console.log(error);
-    errorContainer.innerHTML = errorMessage("An error occurred when calling the APIm, error: " + error);
+    errorContainer.innerHTML = errorMessage("An error occurred when calling the API, error: " + error);
   }
 }
 
