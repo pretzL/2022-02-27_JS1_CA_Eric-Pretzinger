@@ -70,7 +70,7 @@ h2 {
 .jokes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
   width: 80%;
   margin: 0 auto;
 }
@@ -115,10 +115,15 @@ nav ul {
   color: red;
   max-width: 500px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .type-joke {
   margin-top: 2rem;
+}
+
+.details {
+  margin-bottom: 2rem;
 }
 
 /* LOADER */
