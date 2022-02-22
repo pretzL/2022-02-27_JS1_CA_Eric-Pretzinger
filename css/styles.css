@@ -90,6 +90,7 @@ h2 {
 }
 
 .explanation-text {
+  display: none;
   font-size: 0.8rem;
 }
 
@@ -114,6 +115,10 @@ nav ul {
   color: red;
   max-width: 500px;
   margin: 0 auto;
+}
+
+.type-joke {
+  margin-top: 2rem;
 }
 
 /* LOADER */

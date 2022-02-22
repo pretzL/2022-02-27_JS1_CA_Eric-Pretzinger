@@ -25,6 +25,7 @@ async function fetchJoke() {
     detailContainer.innerHTML = `<div class="single-card card">
         <h2>${singleResult.headline}</h2>
         <p>${singleResult.punchline}</p>
+        <button type="button" class="btn">Explanation</button>
         <p class="explanation-text">${singleResult.why}</p>
         </div>`;
   } catch (error) {

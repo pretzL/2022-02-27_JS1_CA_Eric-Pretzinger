@@ -36,7 +36,7 @@ async function getDadJokes() {
       jokeContainer.innerHTML += `<a href="/details.html?id=${jokes[i]._id}" class="card">
         <h2>${headline}</h2>
         <p>${punchline}</p>
-        <p class="explanation-text">${explanation}</p>
+        <p class="type-joke">Type of joke: ${jokes[i].type}</p>
         </a>`;
     }
   } catch (error) {
