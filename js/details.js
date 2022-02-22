@@ -36,7 +36,6 @@ async function fetchJoke() {
     const explanationText = document.querySelector(".explanation-text");
 
     explanationButton.onclick = function () {
-      console.log("Button has been clicked!");
       explanationText.style.display = "block";
     };
   } catch (error) {
