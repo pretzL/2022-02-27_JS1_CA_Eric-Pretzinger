@@ -28,6 +28,16 @@ async function fetchJoke() {
         <button type="button" class="btn">Explanation</button>
         <p class="explanation-text">${singleResult.why}</p>
         </div>`;
+
+    //Explanation hidden function
+
+    const explanationButton = document.querySelector(".btn");
+    const explanationText = document.querySelector(".explanation-text");
+
+    explanationButton.onclick = function () {
+      console.log("Button has been clicked!");
+      explanationText.style.display = "block";
+    };
   } catch (error) {
     console.log(error);
     errorContainer.innerHTML = errorMessage("An error occurred when calling the APIm, error: " + error);
