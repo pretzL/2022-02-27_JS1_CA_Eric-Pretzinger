@@ -11,8 +11,16 @@ if (id === null) {
 
 const detailsURL = "https://papajoke.p.rapidapi.com/api/jokes/" + id;
 
+const options = {
+  headers: {
+    "x-rapidapi-host": "papajoke.p.rapidapi.com",
+    "x-rapidapi-key": "7e288d255dmshdc0a6f684e2951cp1df3b6jsn5afd875a5f17",
+  },
+};
+
 const detailContainer = document.querySelector(".details");
 const idContainer = document.querySelector(".id");
+const errorContainer = document.querySelector(".error-container");
 
 idContainer.innerHTML = "ID: " + id;
 
