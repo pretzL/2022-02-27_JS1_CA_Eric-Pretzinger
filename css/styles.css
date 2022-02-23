@@ -103,7 +103,8 @@ h2 {
 }
 
 nav {
-  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
 }
 
@@ -111,6 +112,14 @@ nav ul {
   list-style-type: none;
   display: flex;
   gap: 3rem;
+  padding-inline-start: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 0.5rem;
 }
 
 .error {
@@ -136,14 +145,53 @@ nav ul {
   font-weight: bold;
 }
 
+/* FORM */
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: lightgrey;
+  width: 800px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background: green;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  margin: 1rem auto 0 auto;
+}
+
 /* LOADER */
 
 .loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid purple;
+  border: 15px solid #f3f3f3;
+  border-top: 15px solid purple;
   border-radius: 100%;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   animation: spin 2s linear infinite;
   position: absolute;
   left: 50%;

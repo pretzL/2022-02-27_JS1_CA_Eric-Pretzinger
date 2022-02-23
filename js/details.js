@@ -21,8 +21,7 @@ const options = {
 const detailContainer = document.querySelector(".details");
 const idContainer = document.querySelector(".id");
 const errorContainer = document.querySelector(".error-container");
-
-idContainer.innerHTML = "ID: " + id;
+const pageTitle = document.querySelector("title");
 
 async function fetchJoke() {
   try {
@@ -48,6 +47,10 @@ async function fetchJoke() {
         <p class="explanation-text">${explanation}</p>
         <p class="type-joke">Type of joke: ${singleResult.type}</p>
         </div>`;
+
+    pageTitle.innerHTML = `${singleResult.headline}`;
+
+    idContainer.innerHTML = "ID: " + id;
 
     //Explanation hidden function
 
