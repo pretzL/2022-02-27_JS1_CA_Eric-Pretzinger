@@ -23,11 +23,6 @@ async function getDadJokes() {
     for (let i = 0; i < jokes.length; i++) {
       const headline = jokes[i].headline;
       let punchline = "Badum.. Tsss...";
-      let explanation = "This joke needs no explanation!";
-
-      if (jokes[i].why) {
-        explanation = jokes[i].why;
-      }
 
       if (jokes[i].punchline) {
         punchline = jokes[i].punchline;
