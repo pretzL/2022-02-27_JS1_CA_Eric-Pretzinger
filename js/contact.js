@@ -1,5 +1,3 @@
-/* Check module 4 lesson 1 for success alert */
-
 const form = document.querySelector(".contact-form");
 const firstName = document.querySelector("#first-name");
 const firstNameError = document.querySelector("#first-name-error");
@@ -48,8 +46,8 @@ function validateForm(form) {
 
 form.addEventListener("submit", validateForm);
 
-function checkLength(value, len) {
-  if (value.trim().length > len) {
+function checkLength(value, char) {
+  if (value.trim().length > char) {
     return true;
   } else {
     return false;
