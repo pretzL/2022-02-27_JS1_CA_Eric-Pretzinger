@@ -59,11 +59,7 @@ function validateForm(form) {
 form.addEventListener("submit", validateForm);
 
 function checkLength(value, char) {
-  if (value.trim().length > char) {
-    return true;
-  } else {
-    return false;
-  }
+  return value.trim().length > char;
 }
 
 // Taken from video "Simple form validation" from Noroff JS1 Module 4 lesson 4.
