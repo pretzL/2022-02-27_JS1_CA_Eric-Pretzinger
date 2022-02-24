@@ -9,6 +9,7 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#email-error");
 const address = document.querySelector("#address");
 const addressError = document.querySelector("#address-error");
+const validatorContainer = document.querySelector(".validator-container");
 
 function validateForm(form) {
   form.preventDefault();
@@ -41,6 +42,10 @@ function validateForm(form) {
     addressError.style.display = "none";
   } else {
     addressError.style.display = "block";
+  }
+
+  if (checkLength(firstName.value, 0) && checkLength(lastName.value, 0) && checkLength(subject.value, 9) && validateEmail(email.value) && checkLength(address.value, 24)) {
+    validatorContainer.style.display = "block";
   }
 }
 
