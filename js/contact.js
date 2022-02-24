@@ -1,14 +1,20 @@
 const form = document.querySelector(".contact-form");
+
 const firstName = document.querySelector("#first-name");
 const firstNameError = document.querySelector("#first-name-error");
+
 const lastName = document.querySelector("#last-name");
 const lastNameError = document.querySelector("#last-name-error");
+
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subject-error");
+
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#email-error");
+
 const address = document.querySelector("#address");
 const addressError = document.querySelector("#address-error");
+
 const validatorContainer = document.querySelector(".validator-container");
 
 function validateForm(form) {
