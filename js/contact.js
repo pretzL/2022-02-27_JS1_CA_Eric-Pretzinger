@@ -44,6 +44,7 @@ function validateForm(form) {
     addressError.style.display = "block";
   }
 
+  // Level 2 process, form validated message
   if (checkLength(firstName.value, 0) && checkLength(lastName.value, 0) && checkLength(subject.value, 9) && validateEmail(email.value) && checkLength(address.value, 24)) {
     validatorContainer.style.display = "block";
   }
